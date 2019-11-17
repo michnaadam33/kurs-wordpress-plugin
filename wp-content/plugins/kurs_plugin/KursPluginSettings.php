@@ -46,9 +46,14 @@ class KursPluginSettings
                             <input type="text" id="kurs_plugin_cytat<?= $key ?>" name="kurs_plugin_cytat[<?=$key?>]"
                                    value="<?= get_option('kurs_plugin_cytat')[$key]; ?>" />
                         </td>
+                        <td>
+                            <button type="button" class="button delete-cytat">-</button>
+                        </td>
                     </tr>
                     <?php endforeach; ?>
                 </table>
+                <input id="kurs_plugin_count" type="hidden" value="<?=$key?>"/>
+                <button id="add-cytat" type="button" class="button">+</button>
                 <?php submit_button(); ?>
             </form>
         </div>

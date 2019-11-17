@@ -12,6 +12,7 @@ require_once(KURS__PLUGIN_DIR."KursPlugin.php");
 require_once(KURS__PLUGIN_DIR."KursPluginSettings.php");
 
 $kursPlugin = new KursPlugin();
+$kursPlugin->addJsScripts();
 
 if (is_admin()){
     $settings = new KursPluginSettings();

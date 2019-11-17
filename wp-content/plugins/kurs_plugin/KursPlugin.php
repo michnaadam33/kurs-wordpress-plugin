@@ -9,6 +9,11 @@ class KursPlugin {
         add_shortcode('kurs_ad_shortcode', [$this, 'adShortCode']);
     }
 
+    public function addJsScripts()
+    {
+        wp_enqueue_script('kurs-script', plugins_url('/js/kurs_script.js', __FILE__),['jquery']);
+    }
+
     public function theContentFilter($content){
         return $content . '<p>Dziękujemy, zapraszamy ponownie.</p>';
     }
