@@ -1,0 +1,15 @@
+.kurs_plugin_cytat_content {
+    padding: 20px 25px 0px 20px;
+    margin: 30px 0 0;
+    overflow: hidden;
+    margin-bottom: 35px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #222;
+    background: linear-gradient(to right, #fff, #ccc);
+    clear: both;
+}
+.kurs_plugin_cytat_content h3 {
+    font-size: 16px;
+    color: #222;
+}

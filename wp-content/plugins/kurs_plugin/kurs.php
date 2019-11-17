@@ -13,6 +13,7 @@ require_once(KURS__PLUGIN_DIR."KursPluginSettings.php");
 
 $kursPlugin = new KursPlugin();
 $kursPlugin->addJsScripts();
+$kursPlugin->addCssStyl();
 
 if (is_admin()){
     $settings = new KursPluginSettings();
